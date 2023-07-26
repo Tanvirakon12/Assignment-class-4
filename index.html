@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="shortcut icon" href="cricket-logo.png" type="image/x-icon">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 50px;
+            background-color: rgb(114, 0, 38);
+        }
+        main {
+            display:flex;
+            gap: 30px;
+        }
+        .players {
+            width:50%;
+            background-color: rgb(79, 0, 11);
+            border: 8px groove rgb(114, 0, 38);
+            border-radius: 18px;
+            /* margin: 15px; 
+            padding:15px;
+            display:inline;
+            box-sizing: border-box;*/
+        }
+        .name{
+            display: block;
+            color: rgb(255, 127, 81);
+            margin: 10px 0;
+            padding: 5px;
+            text-align: center;
+        }
+        .img{
+            display: block;
+            background-size: cover;
+            margin:0 auto;
+            width:250px;
+            height:250px;
+            padding: 1px;
+            border: 5px solid rgb(194, 49, 49);
+            border-radius: 50%
+        }
+       
+        p {
+            color:rgb(255, 155, 84);
+            background-color: rgb(114, 0, 38);
+            font-size:20px; 
+            text-align: justify;
+        }
+         /* extra */
+        .msgbox {
+            color: rgb(31, 175, 180);
+            background-color: brown;
+            font-size: 25px;
+            /* border: 1px solid yellowgreen; */
+            /* border-radius:20%; */
+        }
+        #box3{
+            display:inline;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <main>
+        <div class="players">
+            <h1 class="name">Sakib</h1>
+            <img  class="img" src="Shakib-Al-Hasan..jpg" alt="sakib">
+            <p id="sakib">
+                Shakib Al Hasan is a Bangladeshi cricketer and current captain of the Bangladesh national cricket team in Tests and T20Is. He is known for his aggressive left-handed batting style in the middle order and controlled slow left-arm orthodox bowling.
+            </p>
+            <!-- extra -->
+            <div id="box3">
+                <label for="message" class="msgbox">Message:</label><br>
+                <textarea cols="10" rows="1"></textarea>
+
+            </div>
+        </div>
+
+        <div class="players" id="mushfiq" >
+            <h1 class="name">Mushfiq</h1>
+            <img class="img" src="4-74.jpg" alt="mushfiq">
+            <p>
+                Mushfiqur Rahim born 9 May 1987 is a Bangladeshi cricketer and the former captain and vice-captain of the Bangladesh national cricket team. He is a right-handed middle-order batsman and wicket-keeper in the Bangladesh Cricket Team.
+            </p>
+            <!-- extra -->
+            <div id="box3">
+                <label for="message" class="msgbox" >Message:</label><br>
+                <textarea cols="10" rows="1"></textarea>
+                <br>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
